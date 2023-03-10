@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 app = Flask(__name__)
-app.secret_key = 'mysecretkey'
+app.secret_key = 'abcdesf'
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
