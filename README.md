@@ -12,7 +12,7 @@ By analyzing this data, We can identify trends and patterns in customer behavior
 ## Develop a predictive model: 
 Using the customer data, We will develop a predictive model to identify customers who are more likely to subscribe to a term deposit. The model can use machine learning algorithms to analyze historical data and identify patterns that are predictive of future behavior.
 
-##Test the model: 
+## Test the model: 
 We will test the model using a subset of customer data and measure its accuracy in predicting which customers are likely to subscribe to a term deposit.
 
 ## Monitor and adjust: 
