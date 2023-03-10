@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Banking Project</title>
+</head>
+
+<body>
+    <div class='flash'>
+        {% with messages = get_flashed_messages() %}  
+         {% if messages %}  
+               {% for message in messages %}  
+                    <p>{{ message }}</p>  
+               {% endfor %}  
+         {% endif %}  
+      {% endwith %}
+    </div>
+      
+    <h1 class="heading">Term Deposit Prediction Model</h1>
+    <form class="form-div" action="/" method = 'POST'>
+
+        <div class="formDiv">
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="0" max="150" class="inputtag" required
+                    placeholder="Enter age between0-150">
+            </div>
+
+            <div>
+                <label for="job">Job Type</label>
+                <select id="job" name="job" class="selecttag">
+                    <option value="0">Admin</option>
+                    <option value="1">Blue-collar</option>
+                    <option value="2">Entrepreneur</option>
+                    <option value="3">Housemaid</option>
+                    <option value="4">Management</option>
+                    <option value="5">Retired</option>
+                    <option value="6">Self-Employed</option>
+                    <option value="7">Service</option>
+                    <option value="8">Student</option>
+                    <option value="9">Technician</option>
+                    <option value="10">Unemployed</option>
+                    <option value="11">Unknown</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="marital">Marital Status</label>
+                <select id="marital" name="marital"  class="selecttag">
+                    <option value="2">Single</option>
+                    <option value="1">Married</option>
+                    <option value="0">Divorced</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="education">Education</label>
+                <select id="education" name="education"  class="selecttag">
+                    <option value="0">Basic_4y</option>
+                    <option value="1">Basic_6y</option>
+                    <option value="2">Basic_9y</option>
+                    <option value="3">HighSchool</option>
+                    <option value="4">Illiterate</option>
+                    <option value="5 Course">Professional Course</option>
+                    <option value="6">University Degree</option>
+                    <option value="7">Unknown</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="default">Has Credit in default</label>
+                <select id="default" name="default"  class="selecttag">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="housing">Has Housing loan</label>
+                <select id="housing" name="housing"  class="selecttag">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="loan">Has Personal loan</label>
+                <select id="loan" name="loan"  class="selecttag">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="contact">Contact Communication Type</label>
+                <select id="contact" name="contact"  class="selecttag">
+                    <option value="0">Cellular</option>
+                    <option value="1">Telephone</option>
+                </select>
+            </div>
+
+            <div> <label for="month">Month</label>
+                <select id="month" name="month"  class="selecttag">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </div>
+
+            <div> <label for="day_of_week">Weekday</label>
+                <select id="day_of_week" name="day_of_week"  class="selecttag">
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                </select>
+            </div>
+
+            <div> <label for="duration">Last Contact duration in sec.</label>
+                <input type="number" id="duration" name="duration" min="36" max="550" class="inputtag" required>
+            </div>
+
+            <div> <label for="campaign">Campaign</label>
+                <select id="campaign" name="campaign"  class="selecttag">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div> <label for="poutcome">Outcome</label>
+                <select id="poutcome" name="poutcome"  class="selecttag">
+                    <option value="0">Faliure</option>
+                    <option value="1">Nonexistent</option>
+                    <option value="2">Success</option>
+                </select>
+            </div>
+<div></div>
+         
+            
+        </div>
+        <div class="submitbtn"><input type="submit" value="Submit"></div>
+
+    </form>
+</body>
+
+</html>
